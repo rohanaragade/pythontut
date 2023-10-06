@@ -1,0 +1,10 @@
+f=open("myfile.txt",'r')
+f.seek(10)
+print(f.tell())
+data=f.read(5)
+print(data)
+
+f=open("myfile.txt",'w')
+f.write('ro hanaragade')
+f.truncate(5)
+f.close()
